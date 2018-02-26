@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student[
+<!ELEMENT student (student_info*)>
+<!ELEMENT student_info (name,id,cgpa,courses)>
+<!ELEMENT courses (course)>
+<!ELEMENT course (serial,cname,section,grade)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT cgpa (#PCDATA)>
+<!ELEMENT serial (#PCDATA)>
+<!ELEMENT cname (#PCDATA)>
+<!ELEMENT section (#PCDATA)>
+<!ELEMENT grade (#PCDATA)> 
+]>
+<student>
+
+<student_info>
+
+<name> Sample student 1 </name>
+<id>12-21221-2</id>
+<cgpa>3.80</cgpa>
+<courses>
+<course><serial>1</serial><cname>Java</cname><section>B</section><grade>A+</grade></course>
+<course><serial>2</serial><cname>ATP-1</cname><section>A</section><grade>A+</grade></course>
+</courses>
+</student_info>
+
+<student_info>
+
+<name> Sample student 2 </name>
+<id>12-21221-2</id>
+<cgpa>3.80</cgpa>
+<courses>
+<course><serial>1</serial><cname>Web Tech</cname><section>B</section><grade>A+</grade></course>
+<course><serial>2</serial><cname>ATP-3</cname><section>A</section><grade>A+</grade></course>
+</courses>
+</student_info>
+</student>
